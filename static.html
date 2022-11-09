@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Стастистика </title>
+
+</head>
+<body>
+
+	<ul type="none">
+    	  <li><a href="index.html">ОЛИМПИЙСКИЕ ИГРЫ</a></li>      
+     	 <li><a href="static.html"><b><big><h1 align="center">Статистика </h1></big></b></a></li>
+    	</ul>
+
+	<hr  color=maroon size=10>
+
+<body>
+
+<details>
+    <summary> График </summary>
+    <form>
+        <table>
+          <tbody><tr>
+            <th>Значениe по оси OX</th>
+            <th>Результат</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="ox" value="0">Сезон<br>
+              <input type="radio" name="ox" value="1">Страна<br>
+              <input type="radio" name="ox" value="3">Год<br>
+            </td>
+            <td>
+              <input type="checkbox" name="oy" value="0">Максимальное кол-во золота<br>
+              <input type="checkbox" name="oy" value="1">Максимальное кол-во серебра<br>
+			  <input type="checkbox" name="oy" value="3">Максимальное кол-во бронзы<br>
+              <input type="checkbox" name="oy" value="4">Максимальная сумма<br>
+            </td>
+          </tr>
+        </tbody></table>
+		<input type="button" value="Построить">
+		<p>Здесь будет график</p>
+	</form>	
+</details> 
+<details>
+    <summary> Фильтр</summary>
+    <form>
+        <p>
+		    <label for="season">Сезон:</label>
+            <input type="text" name="season">
+        </p>
+        <p>
+		   <label for="country">Страна:</label>
+          <input type="text" name="country">
+        </p>
+ 		 <p>
+		  <label for="yFrom">Год: </label>
+           от <input type="text" name="yFrom"> до <input type="text" name="yFo">
+        </p>
+        <p>
+		   <label for="hFrom">Сумма:</label>
+           от <input type="text" name="hFrom"> до <input type="text" name="hTo">
+        </p>
+        <input type="button" value="Найти">		
+	</form>	
+</details> 
+<details open="">
+    <summary>Сортировка</summary>
+    <form>
+	  <p>
+          Первый уровень:
+          <select name="sortFirst">
+            <option value="0">Нет</option>
+            <option value="1">Сезон</option>
+            <option value="2">Год</option>
+            <option value="3">Страна</option>
+            <option value="4">Золото</option>
+			<option value="6">Серебро</option>
+            <option value="5">Бронза</option>
+ 
+          </select>
+          <input type="checkbox" name="descFirst">  по убыванию
+        </p>  
+        <p>
+          Второй уровень:
+		  <select name="sortSecond">
+            <option value="0">Нет</option>
+            <option value="1">Сезон</option>
+            <option value="2">Год</option>
+            <option value="3">Страна</option>
+            <option value="4">Золото</option>
+			<option value="6">Серебро</option>
+            <option value="5">Бронза</option>
+          </select>
+          <input type="checkbox" name="descSecond">  по убыванию
+        </p>
+        <p>
+          Третий уровень:
+          <select name="sortThird">
+             <option value="0">Нет</option>
+            <option value="1">Сезон</option>
+            <option value="2">Год</option>
+            <option value="3">Страна</option>
+            <option value="4">Золото</option>
+			<option value="6">Серебро</option>
+            <option value="5">Бронза</option>
+          </select>
+          <input type="checkbox" name="descThird">  по убыванию
+        </p>
+      <input type="button" value="Сортировать">		
+	</form>	
+</details> 
+<br>    
+<table border="1" cellspacing="0" cellpadding="5">
+	<tbody>
+        <tr><th>№</th><th>Сезон</th><th>Год</th><th>Страна</th><th>Золото</th><th>Серебро</th><th>Бронза</th><th>Сумма</th></tr>
+	<tr><td>1</td><td>Зимняя</td><td>2014</td><td>Россия</td><td>13</td><td>11</td><td>9</td><th>33</th></tr>
+	<tr><td>2</td><td> Зимняя</td><td>2014</td><td>Норвегия</td><td>11</td><td>5</td><td>10</td><th>26</th></tr>
+	<tr><td>3</td><td>Зимняя</td><td>2014</td><td>Канада</td><td>10</td><td>10</td><td>5</td><th>25</th></tr>
+	<tr><td>4</td><td>Зимняя</td><td>2014</td><td>США</td><td>9</td><td>7</td><td>12</td><th>28</th></tr>
+	<tr><td>5</td><td>Зимняя</td><td>2014</td><td>Голландия</td><td>8</td><td>7</td><td>9</td><th>24</th></tr>
+	<tr><td>6</td><td>Зимняя</td><td>2014</td><td>Германия</td><td>8</td><td>6</td><td>5</td><th>19</th></tr>
+	<tr><td>7</td><td>Зимняя</td><td>2014</td><td>Швейцария</td><td>6</td><td>3</td><td>2</td><th>11</th></tr>
+	<tr><td>8</td><td>Зимняя</td><td>2014</td><td>Белоруссия</td><td>5</td><td>0</td><td>1</td><th>6</th></tr>
+	<tr><td>9</td><td>Зимняя</td><td>2014</td><td>Австрия</td><td>4</td><td>8</td><td>5</td><th>17</th></tr>
+    <tr><td>10</td><td>Зимняя</td><td>2014</td><td>Франция</td><td>4</td><td>4</td><td>7</td><th>15</th></tr>
+	<tr><td>11</td><td>Зимняя</td><td>2014</td><td>Польша</td><td>4</td><td>1</td><td>1</td><th>6</th></tr>
+	<tr><td>12</td><td>Зимняя</td><td>2014</td><td>Китай</td><td>3</td><td>4</td><td>2</td><th>9</th></tr>
+	<tr><td>13</td><td>Зимняя</td><td>2014</td><td>Корея</td><td>3</td><td>3</td><td>2</td><th>8</th></tr>
+	<tr><td>14</td><td>Зимняя</td><td>2014</td><td>Швеция</td><td>2</td><td>7</td><td>6</td><th>15</th></tr>
+	<tr><td>15</td><td>Зимняя</td><td>2014</td><td>Чехия</td><td>2</td><td>4</td><td>2</td><th>8</th></tr>
+	<tr><td>16</td><td>Зимняя</td><td>2014</td><td>Словения</td><td>2</td><td>2</td><td>4</td><th>8</th></tr>
+	<tr><td>17</td><td>Зимняя</td><td>2014</td><td>Япония</td><td>1</td><td>4</td><td>3</td><th>8</th></tr>
+	<tr><td>18</td><td>Зимняя</td><td>2014</td><td>Финляндия</td><td>1</td><td>3</td><td>1</td><th>5</th></tr>
+	<tr><td>19</td><td>Зимняя</td><td>2014</td><td>Великобритания</td><td>1</td><td>1</td><td>2</td><th>4</th></tr>
+	<tr><td>20</td><td>Зимняя</td><td>2014</td><td>Украина</td><td>1</td><td>0</td><td>1</td><th>2</th></tr>
+	<tr><td>21</td><td>Зимняя</td><td>2014</td><td>Словакия</td><td>1</td><td>0</td><td>0</td><th>1</th></tr>
+	<tr><td>22</td><td>Зимняя</td><td>2014</td><td>Италия</td><td>0</td><td>2</td><td>6</td><th>8</th></tr>
+	<tr><td>22</td><td>Зимняя</td><td>2014</td><td>Италия</td><td>0</td><td>2</td><td>6</td><th>8</th></tr>
+	<tr><td>23</td><td>Зимняя</td><td>2014</td><td>Латвия</td><td>0</td><td>2</td><td>2</td><th>4</th></tr>
+	<tr><td>24</td><td>Зимняя</td><td>2014</td><td>Австралия</td><td>0</td><td>2</td><td>1</td><th>3</th></tr>
+	<tr><td>25</td><td>Зимняя</td><td>2014</td><td>Хорватия</td><td>0</td><td>1</td><td>0</td><th>1</th></tr>
+	<tr><td>26</td><td>Зимняя</td><td>2014</td><td>Казахстан</td><td>0</td><td>0</td><td>1</td><th>1</th></tr>
+        
+        
+	<tr><td>27</td><td>Зимняя</td><td>2018</td><td>Норвегия</td><td>14</td><td>14</td><td>11</td><th>39</th></tr>
+	<tr><td>28</td><td>Зимняя</td><td>2018</td><td>Германия</td><td>14</td><td>10</td><td>7</td><th>31</th></tr>
+	<tr><td>29</td><td>Зимняя</td><td>2018</td><td>Канада</td><td>11</td><td>8</td><td>10</td><th>29</th></tr>
+	<tr><td>30</td><td> Зимняя</td><td>2018</td><td>США</td><td>9</td><td>8</td><td>6</td><th>23</th></tr>
+	<tr><td>31</td><td>Зимняя</td><td>2018</td><td>Нидерланды</td><td>8</td><td>6</td><td>6</td><th>20</th></tr>
+	<tr><td>32</td><td>Зимняя</td><td>2018</td><td>Швеция</td><td>7</td><td>6</td><td>1</td><th>14</th></tr>
+	<tr><td>33</td><td>Зимняя</td><td>2018</td><td>Корея</td><td>5</td><td>8</td><td>4</td><th>17</th></tr>
+	<tr><td>34</td><td>Зимняя</td><td>2018</td><td>Швейцария</td><td>5</td><td>6</td><td>4</td><th>15</th></tr>
+	<tr><td>35</td><td>Зимняя</td><td>2018</td><td>Франция</td><td>5</td><td>4</td><td>6</td><th>15</th></tr>
+	<tr><td>36</td><td>Зимняя</td><td>2018</td><td>Австрия</td><td>7</td><td>6</td><td>1</td><th>14</th></tr>
+	<tr><td>37</td><td>Зимняя</td><td>2018</td><td>Япония</td><td>4</td><td>5</td><td>4</td><th>13</th></tr>
+    <tr><td>38</td><td>Зимняя</td><td>2018</td><td>Италия</td><td>3</td><td>2</td><td>5</td><th>10</th></tr>
+	<tr><td>39</td><td>Зимняя</td><td>2018</td><td>Россия</td><td>2</td><td>6</td><td>9</td><th>17</th></tr>
+	<tr><td>40</td><td>Зимняя</td><td>2018</td><td>Чехия</td><td>2</td><td>2</td><td>3</td><th>7</th></tr>
+	<tr><td>41</td><td>Зимняя</td><td>2018</td><td>Белоруссия</td><td>2</td><td>1</td><td>0</td><th>3</th></tr>
+	<tr><td>42</td><td>Зимняя</td><td>2018</td><td>Китай</td><td>1</td><td>6</td><td>2</td><th>9</th></tr>
+	<tr><td>43</td><td>Зимняя</td><td>2018</td><td>Словакия</td><td>1</td><td>2</td><td>0</td><th>3</th></tr>
+	<tr><td>44</td><td>Зимняя</td><td>2018</td><td>Финляндия</td><td>1</td><td>1</td><td>4</td><th>6</th></tr>
+	<tr><td>45</td><td>Зимняя</td><td>2018</td><td>Великобритания</td><td>1</td><td>0</td><td>4</td><th>5</th></tr>
+	<tr><td>46</td><td>Зимняя</td><td>2018</td><td>Польша</td><td>1</td><td>0</td><td>1</td><th>2</th></tr>
+	<tr><td>47</td><td>Зимняя</td><td>2018</td><td>Венгрия</td><td>1</td><td>0</td><td>0</td><th>1</th></tr>
+	<tr><td>48</td><td>Зимняя</td><td>2018</td><td>Украина</td><td>1</td><td>0</td><td>0</td><th>1</th></tr>
+	<tr><td>49</td><td>Зимняя</td><td>2014</td><td>Австралия</td><td>0</td><td>2</td><td>1</td><th>3</th></tr>
+	<tr><td>50</td><td>Зимняя</td><td>2014</td><td>Словения</td><td>0</td><td>1</td><td>1</td><th>2</th></tr>
+	<tr><td>51</td><td>Зимняя</td><td>2014</td><td>Бельгия</td><td>0</td><td>1</td><td>0</td><th>1</th></tr>
+	<tr><td>52</td><td>Зимняя</td><td>2014</td><td>Испания</td><td>0</td><td>0</td><td>2</td><th>2</th></tr>
+	<tr><td>53</td><td>Зимняя</td><td>2014</td><td>Новая Зеландия</td><td>0</td><td>0</td><td>2</td><th>2</th></tr>
+	<tr><td>54</td><td>Зимняя</td><td>2014</td><td>Казахстан</td><td>0</td><td>0</td><td>1</td><th>1</th></tr>
+    <tr><td>55</td><td>Зимняя</td><td>2014</td><td>Латвия</td><td>0</td><td>0</td><td>1</td><th>1</th></tr>
+	<tr><td>56</td><td>Зимняя</td><td>2014</td><td>Лихтенштейн</td><td>0</td><td>0</td><td>1</td><th>1</th></tr>
+	
+        
+    <tr><td>57</td><td>Летняя</td><td>2016</td><td>США</td><td>46</td><td>37</td><td>38</td><th>121</th></tr>
+	<tr><td>58</td><td>Летняя</td><td>2016</td><td>Великобритания</td><td>27</td><td>23</td><td>17</td><th>67</th></tr>
+	<tr><td>59</td><td>Летняя</td><td>2016</td><td>Китай</td><td>26</td><td>18</td><td>26</td><th>70</th></tr>
+    <tr><td>60</td><td>Летняя</td><td>2016</td><td>Россия</td><td>19</td><td>18</td><td>19</td><th>56</th></tr>
+	<tr><td>61</td><td>Летняя</td><td>2016</td><td>Германия</td><td>17</td><td>10</td><td>15</td><th>42</th></tr><tr>
+    <td>62</td><td>Летняя</td><td>2016</td><td>Япония</td><td>12</td><td>8</td><td>21</td><th>41</th></tr><tr>
+    <td>63</td><td>Летняя</td><td>2016</td><td>Франция</td><td>10</td><td>18</td><td>14</td><th>42</th></tr><tr>
+    <td>64</td><td>Летняя</td><td>2016</td><td>Корея</td><td>9</td><td>3</td><td>9</td><th>21</th></tr><tr>
+    <td>65</td><td>Летняя</td><td>2016</td><td>Италия</td><td>8</td><td>12</td><td>8</td><th>28</th></tr><tr>
+    <td>66</td><td>Летняя</td><td>2016</td><td>Австралия</td><td>8</td><td>11</td><td>10</td><th>29</th></tr><tr>
+    <td>67</td><td>Летняя</td><td>2016</td><td>Нидерланды</td><td>8</td><td>7</td><td>4</td><th>19</th></tr><tr>
+    <td>68</td><td>Летняя</td><td>2016</td><td>Венгрия</td><td>8</td><td>3</td><td>4</td><th>15</th></tr><tr>
+    <td>69</td><td>Летняя</td><td>2016</td><td>Бразилия</td><td>7</td><td>6</td><td>6</td><th>19</th></tr><tr>
+    <td>70</td><td>Летняя</td><td>2016</td><td>Испания</td><td>7</td><td>4</td><td>6</td><th>17</th></tr><tr>
+    <td>71</td><td>Летняя</td><td>2016</td><td>Кения</td><td>6</td><td>6</td><td>1</td><th>13</th></tr><tr>
+    <td>72</td><td>Летняя</td><td>2016</td><td>Ямайка</td><td>6</td><td>3</td><td>2</td><th>11</th></tr><tr>
+    <td>73</td><td>Летняя</td><td>2016</td><td>Хорватия</td><td>5</td><td>3</td><td>2</td><th>10</th></tr><tr>
+    <td>74</td><td>Летняя</td><td>2016</td><td>Куба</td><td>5</td><td>2</td><td>4</td><th>11</th></tr><tr>
+    <td>75</td><td>Летняя</td><td>2016</td><td>Новая Зелендия</td><td>4</td><td>9</td><td>5</td><th>18</th></tr>
+    <tr><td>76</td><td>Летняя</td><td>2016</td><td>Канада</td><td>4</td><td>3</td><td>15</td><th>22</th></tr><tr>
+    <td>77</td><td>Летняя</td><td>2016</td><td>Узбекистан</td><td>4</td><td>2</td><td>7</td><th>13</th></tr><tr>
+    <td>78</td><td>Летняя</td><td>2016</td><td>Казахстан</td><td>3</td><td>5</td><td>9</td><th>17</th></tr><tr>
+    <td>79</td><td>Летняя</td><td>2016</td><td>Колумбия</td><td>3</td><td>2</td><td>3</td><th>8</th></tr><tr>
+    <td>80</td><td>Летняя</td><td>2016</td><td>Швейцария</td><td>3</td><td>2</td><td>2</td><th>7</th></tr>
+    <tr><td>81</td><td>Летняя</td><td>2016</td><td>Иран</td><td>3</td><td>1</td><td>4</td><th>8</th></tr><tr>
+    <td>82</td><td>Летняя</td><td>2016</td><td>Греция</td><td>3</td><td>1</td><td>2</td><th>6</th></tr><tr>
+    <td>83</td><td>Летняя</td><td>2016</td><td>Аргентина</td><td>3</td><td>1</td><td>0</td><th>4</th></tr><tr>
+    <td>84</td><td>Летняя</td><td>2016</td><td>Дания</td><td>2</td><td>6</td><td>7</td><th>15</th></tr><tr>
+    <td>85</td><td>Летняя</td><td>2016</td><td>Швеция</td><td>2</td><td>6</td><td>3</td><th>11</th></tr><tr>
+    <td>86</td><td>Летняя</td><td>2016</td><td>ЮАР</td><td>2</td><td>6</td><td>2</td><th>10</th></tr><tr>
+    <td>87</td><td>Летняя</td><td>2016</td><td>Украина</td><td>2</td><td>5</td><td>4</td><th>11</th></tr><tr>
+    <td>88</td><td>Летняя</td><td>2016</td><td>Сербия</td><td>2</td><td>4</td><td>2</td><th>8</th></tr><tr>
+    <td>89</td><td>Летняя</td><td>2016</td><td>Польша</td><td>2</td><td>3</td><td>6</td><th>11</th></tr><tr>
+    <td>90</td><td>Летняя</td><td>2016</td><td>КНДР</td><td>2</td><td>3</td><td>2</td><th>7</th></tr><tr>
+    <td>91</td><td>Летняя</td><td>2016</td><td>Бельгия</td><td>2</td><td>2</td><td>2</td><th>6</th></tr><tr>
+    <td>92</td><td>Летняя</td><td>2016</td><td>Таиланд</td><td>2</td><td>2</td><td>2</td><th>6</th></tr><tr>
+    <td>93</td><td>Летняя</td><td>2016</td><td>Словакия</td><td>2</td><td>2</td><td>0</td><th>4</th></tr><tr>
+    <td>94</td><td>Летняя</td><td>2016</td><td>Грузия</td><td>2</td><td>1</td><td>4</td><th>7</th></tr><tr>
+    <td>95</td><td>Летняя</td><td>2016</td><td>Азербайджан</td><td>1</td><td>7</td><td>10</td><th>18</th></tr><tr>
+    <td>96</td><td>Летняя</td><td>2016</td><td>Белоруссия</td><td>1</td><td>4</td><td>4</td><th>9</th></tr><tr>
+    <td>97</td><td>Летняя</td><td>2016</td><td>Турция</td><td>1</td><td>3</td><td>4</td><th>8</th></tr><tr>
+    <td>98</td><td>Летняя</td><td>2016</td><td>Армения</td><td>1</td><td>3</td><td>0</td><th>4</th></tr><tr>
+    <td>99</td><td>Летняя</td><td>2016</td><td>Чехия</td><td>1</td><td>2</td><td>7</td><th>10</th></tr><tr>
+    <td>100</td><td>Летняя</td><td>2016</td><td>Эфиопия</td><td>1</td><td>2</td><td>5</td><th>8</th></tr>
+</tbody></table>
+
+<p>
+<a href="#top">Наверх</a>
+</p> 
+    
+<div id="shimai-world" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 2147483647; pointer-events: none; background: transparent;"></div></body>
+	<p>
+	<img src="https://aif-s3.aif.ru/images/013/461/0c6e4614eecc54507f51674bf10ac535.jpg" width="350" hspace="15px" vspace="10px">
+	</p>
+
+	
+
+</body>
+</html>
